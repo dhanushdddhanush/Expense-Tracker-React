@@ -77,7 +77,7 @@ export default ExpenseTable;
 
 // import React from 'react';
 // import { useEffect , useState} from 'react';
-
+// import { useNavigate } from "react-router-dom";
 // function ExpenseTable() {
 // const [expenses, setExpenses] = useState([]);
 // const[search, setSearch]=useState('');
@@ -86,10 +86,14 @@ export default ExpenseTable;
 //     .then((response) => response.json())
 //     .then((data) => setExpenses(data));
 // },[]);
+// const navigate = useNavigate();
 // useEffect(() => {
 //     localStorage.setItem('expenses', JSON.stringify(expenses));
 //   }, [expenses]);
-
+//   const handleAdd = () => {
+   
+//     navigate("/add-edit");
+//   };
 //   const handleSearch = expenses.filter(
 //     (expense) =>
 //         expense.email.toLowerCase().includes(search.toLowerCase()) ||
@@ -101,7 +105,7 @@ export default ExpenseTable;
 //   return (
 //    <>
 //    <input type="search"  name="search" id="" onChange={(e)=>setSearch(e.target.value)} />
-//    <button>Add</button>
+//    <button onClick={handleAdd}>Add new expense</button>
 // <table >
 //     <thead>
 //         <tr>

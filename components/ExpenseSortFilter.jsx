@@ -35,14 +35,12 @@ const ExpenseSortFilter = ({ data, setFilteredData }) => {
     <div>
       <select name="sort" id="sort" value={sortType} onChange={handleSort}>
       <option value="">Sort By Amount</option>
-        <option value="">None</option>
         <option value="amount">Amount</option>
       </select>
 
       
       <select name="filter" id="filter" value={filterTerm} onChange={handleFilter}>
       <option value="">Filtert by Category</option>
-        <option value="">None</option>
         <option value="food">Food</option>
         <option value="transport">Transport</option>
         <option value="entertainment">Entertainment</option>
